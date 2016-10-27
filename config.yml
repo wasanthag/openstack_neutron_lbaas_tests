@@ -3,12 +3,12 @@ general:
     log_level: logging.DEBUG
     log_file_name: os-lbaas-test-log.txt
 keystone:
-    #os_tenant_name: tenant1
-    #os_tenant_id: 12345
-    #os_username: t1-u1
-    #os_password: xxxxxxx
-    #os_auth_url: https://openstack.cloud.com:5000/v2.0/
-    #os_region: region-1
+    os_tenant_name: tenant1
+    os_tenant_id: 12345
+    os_username: t1-u1
+    os_password: xxxxxxx
+    os_auth_url: https://openstack.cloud.com:5000/v2.0/
+    os_region: region-1
     
 compute:
     vm_base_name: lbaas-vm
@@ -34,11 +34,10 @@ network:
     lbaas_vip_ssl_port: 443
 
 avi:
-    #pod5
-    #avi_controller_vip: 1.2.3.4
-    #avi_controller_user: admin
-    #avi_controller_passwd: xxxxx
-    #vip_timeout: 300
+    avi_controller_vip: 1.2.3.4
+    avi_controller_user: admin
+    avi_controller_passwd: xxxxx
+    vip_timeout: 300
    
 
 keystone_admin:
