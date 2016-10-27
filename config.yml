@@ -1,0 +1,50 @@
+---
+general:
+    log_level: logging.DEBUG
+    log_file_name: os-lbaas-test-log.txt
+keystone:
+    #os_tenant_name: tenant1
+    #os_tenant_id: 12345
+    #os_username: t1-u1
+    #os_password: xxxxxxx
+    #os_auth_url: https://openstack.cloud.com:5000/v2.0/
+    #os_region: region-1
+    
+compute:
+    vm_base_name: lbaas-vm
+    vm_base_ip: 192.168.69.69
+    image_name: CentOS-7
+    flavor_name: Micro
+    sec_group_name: sg-1
+    net_name: t1-net1
+    key_name: t1-key
+    number_of_vms: 3
+
+network:
+    net_name: t1-net1
+    subnet_name: t1-net1
+    router_name: t1-router1
+    router_port_name: rport1
+    float_net: floating-net1
+    lbaas_provider: <lbaas_provider>
+    lbaas_pool: t1-pool1
+    lbaas_vip: t1-vip1
+    lbaas_monitor: t1-monitor
+    lbaas_vip_port: 80
+    lbaas_vip_ssl_port: 443
+
+avi:
+    #pod5
+    #avi_controller_vip: 1.2.3.4
+    #avi_controller_user: admin
+    #avi_controller_passwd: xxxxx
+    #vip_timeout: 300
+   
+
+keystone_admin:
+    os_password: xxxxx
+    os_auth_url: https://openstack.cloud.com:5000/v2.0/
+    os_username: admin
+    os_tenant_name: admin
+    os_tenant_id: 12345
+    os_region: region-1
